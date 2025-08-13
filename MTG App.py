@@ -1,4 +1,4 @@
-from Main_Menu import *
+from mainMenu import *
 
 def main():
 

@@ -2,8 +2,15 @@ from csv import *
 import os
 
 class DataLists:
+    """
+    Class to store imported data from the .csv files in the project
+    creates several lists and dictionaries to store the information
+    """
 
-    def __init__(self):
+    def __init__(self) -> None:
+        """
+        Creates the base dictionaries and lists for field names, then calls the populate functions to fill in the info
+        """
 
         self.filepaths = {'deck file': 'data/deck table.csv', 'game file': 'data/game table.csv',
                           'join file': 'data/join table.csv', 'player file': 'data/player table.csv'}
@@ -31,7 +38,10 @@ class DataLists:
         self.populate_deck_lists()
         self.populate_join_lists()
 
-    def create_file_paths(self):
+    def create_file_paths(self) -> None:
+        """
+        creates a file path csv for the various files needed, the csv is organized by the file needed
+        """
 
         with open('data/filepaths.csv', 'w') as csv_filepaths:
             writer = DictWriter(csv_filepaths,
@@ -41,7 +51,10 @@ class DataLists:
                           'join file': 'data/join table.csv', 'loss file': 'data/loss table.csv',
                           'player file': 'data/player table.csv'})
 
-    def get_file_paths(self):
+    def get_file_paths(self) -> None:
+        """
+        Gets the paths to each needed file
+        """
 
         with open('data/filepaths.csv', 'r') as csv_filepaths:
 
@@ -50,7 +63,11 @@ class DataLists:
             for dict in file_reader:
                 self.filepaths = dict
 
-    def populate_player_lists(self):
+    def populate_player_lists(self) -> None:
+        """
+        Gets information from the appropriate CSV file and populates the list of dictionaries
+        """
+
 
         if not os.path.isfile(self.filepaths['player file']):
 
@@ -75,7 +92,10 @@ class DataLists:
             self.possible_players.sort()
 
 
-    def populate_game_lists(self):
+    def populate_game_lists(self) -> None:
+        """
+        Gets information from the appropriate CSV file and populates the game list of dictionaries
+        """
 
         if not os.path.isfile(self.filepaths['game file']):
 
@@ -93,7 +113,10 @@ class DataLists:
                 for row in reader:
                     self.game_table_dicts.append(row)
 
-    def populate_deck_lists(self):
+    def populate_deck_lists(self) -> None:
+        """
+        Gets information from the appropriate CSV file and populates the deck list of dictionaries
+        """
 
         if not os.path.isfile(self.filepaths['deck file']):
             with open(self.filepaths['deck file'], 'w', newline='') as csv_decks:
@@ -115,7 +138,11 @@ class DataLists:
 
         self.deck_lists.sort()
 
-    def populate_join_lists(self):
+    def populate_join_lists(self) -> None:
+        """
+        Gets information from the appropriate CSV file and populates the join list of dictionaries
+        """
+
         if not os.path.isfile(self.filepaths['join file']):
             with open(self.filepaths['join file'], 'w', newline='') as csv_join_file:
                 writer = DictWriter(csv_join_file, fieldnames=self.join_fields)
