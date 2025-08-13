@@ -1,0 +1,3 @@
+Deck ID (PK),Player ID (FK),Commander
+D-1,NC,Deck 1
+D-2,TT,Deck 2

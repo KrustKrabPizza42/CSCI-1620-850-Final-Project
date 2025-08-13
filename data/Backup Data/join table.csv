@@ -1,0 +1,291 @@
+Game Id,Deck Id (Fk),Player Id (Fk),Turn 1 Sol Ring,Loss Reason
+1,Shay Cormac,CC,0,Combat Damage
+1,Alania,KE,0,Combat Damage
+1,Ygra,LT,0,
+1,Xavier,NC,0,Combat Damage
+1,Ezrim,ZH,0,Combat Damage
+2,Vorinclex,CC,0,Combat Damage
+2,Alania,KE,0,Combat Damage
+2,Perry,LT,0,Combat Damage
+2,Leonardo,NC,0,
+2,Ezrim,ZH,0,Infect
+3,Shay Cormac,CC,0,Combat Damage
+3,Bright-Palm,KE,0,Combat Damage
+3,Mr. House,LT,0,
+3,Xavier,NC,0,Forfeit
+3,Elas il-Kor,ZH,0,Combat Damage
+4,Nelly,CC,0,Burn
+4,Alania,KE,0,
+4,Mr. House,LT,0,Burn
+4,Wilhelt,NC,1,Burn
+5,Atraxa,CC,0,Drain
+5,Merry & Pippin,KE,0,Combat Damage
+5,Unesh,LT,0,
+5,Xavier,NC,0,Forfeit
+5,Urtet,ZH,0,Forfeit
+6,Rivaz,CC,0,Combat Damage
+6,Obeka,KE,0,Combat Damage
+6,Voja,LT,0,Combat Damage
+6,Ezrim,ZH,1,Combat Damage
+7,Shay Cormac,CC,0,Combat Damage
+7,Zoraline,KE,0,Forfeit
+7,Runo,LT,0,
+7,Leonardo,NC,0,Forfeit
+7,Avacyn,ZH,0,Forfeit
+8,Ovika,CC,0,
+8,Eivor,KE,0,Combat Damage
+8,Sheoldred,LT,0,
+8,Raggadragga,NC,0,Combat Damage
+9,Nelly,CC,0,
+9,Alesha,KE,0,Combat Damage
+9,Zhulodok,LT,1,Combat Damage
+9,Kykar,NC,0,Forfeit
+10,Atraxa,CC,0,Burn
+10,Jared,KE,0,Drain
+10,Ygra,LT,0,
+10,Miirym,ZH,0,Drain
+11,Faldorn,CC,0,Combat Damage
+11,Eivor,KE,1,
+11,Archelos,LT,0,Combat Damage
+11,Galadriel,ZH,0,Forfeit
+12,Nazgul,CC,0,Combat Damage
+12,Greyfax,KE,0,
+12,Heliod,LT,1,Deck Out
+12,Ezrim,ZH,0,Deck Out
+13,Shay Cormac,CC,1,Alt Win Con
+13,Alesha,KE,0,Alt Win Con
+13,Chun Li,LT,0,Alt Win Con
+13,Galadriel,ZH,0,
+14,Krenko,CC,0,
+14,Xolatoyac,KE,0,Burn
+14,N'ghathrod,LT,0,Combat Damage
+14,Shalai and Hallar,NC,0,Combat Damage
+14,Olivia,ZH,0,Burn
+15,Shay Cormac,CC,0,Combat Damage
+15,Volo,KE,0,Combat Damage
+15,Mr. House,LT,0,Combat Damage
+15,Xavier,NC,0,Combat Damage
+15,Aminatou,ZH,0,
+16,Aesi,CC,0,Combat Damage
+16,Tyranids,KE,0,Combat Damage
+16,Kambal,LT,0,
+16,Raphael,ZH,0,Combat Damage
+17,Ghazghkull,CC,0,Combat Damage
+17,Jared,KE,0,
+17,Locust God,LT,0,Commander Damage
+17,Wilhelt,NC,0,Commander Damage
+17,Umbris,ZH,0,Commander Damage
+18,Faldorn,CC,1,Drain
+18,Beluna,KE,0,Drain
+18,Chatterfang,LT,0,
+18,Shalai and Hallar,NC,0,Drain
+18,Dihada,ZH,0,Drain
+19,Nelly,CC,0,Commander Damage
+19,Eivor,KE,0,Combat Damage
+19,Chishiro,LT,0,Combat Damage
+19,Leonardo,NC,0,
+19,Satya,ZH,0,Combat Damage
+20,Saruman,CC,0,Drain
+20,Goro-Goro,KE,0,Combat Damage
+20,Zhulodok,LT,0,
+20,Judith,NC,0,Drain
+20,Mycotyrant,ZH,0,Infect
+21,Goro-Goro,CC,0,Combat Damage
+21,Mr. House,KE,0,Infect
+21,Leonardo,LT,0,
+21,Atraxa,NC,0,Combat Damage
+22,Nelly,CC,0,Combat Damage
+22,Temmet,KE,0,
+22,Archelos,LT,0,Combat Damage
+22,Xavier,NC,0,Burn
+23,Nazgul,CC,0,Combat Damage
+23,Temmet,KE,0,Commander Damage
+23,Zabaz,LT,0,Combat Damage
+23,Shadrix,NC,0,
+23,Captain Howler,ZH,0,Combat Damage
+24,Krenko,CC,0,Infect
+24,Temmet,KE,1,Combat Damage
+24,Arcades,LT,0,Infect
+24,Henzie,NC,0,Forfeit
+24,Captain Howler,ZH,0,
+25,Ovika,CC,0,Burn
+25,Dogmeat,KE,0,Combat Damage
+25,Zabaz,LT,0,Forfeit
+25,Henzie,NC,0,
+25,Captain Howler,ZH,0,Drain
+26,Shay Cormac,CC,0,Combat Damage
+26,Zoraline,KE,0,Combat Damage
+26,Hinata,LT,0,Forfeit
+26,Wilhelt,NC,0,
+26,Kosei,ZH,0,Forfeit
+27,Rutstein,CC,0,Drain
+27,Temmet,KE,0,Drain
+27,Kambal,LT,0,
+27,Shadrix,NC,0,Drain
+27,Kosei,ZH,0,Commander Damage
+28,Rivaz,CC,0,
+28,Alania,KE,0,
+28,Zabaz,LT,0,
+28,Captain Howler,ZH,0,
+29,Faldorn,CC,0,Combat Damage
+29,Xanathar,KE,0,Combat Damage
+29,Alexios,LT,1,
+29,Aminatou,ZH,0,Combat Damage
+30,Nazgul,CC,0,Deck Out
+30,Xanathar,KE,0,Deck Out
+30,Lynde,LT,0,
+30,Aminatou,ZH,0,Deck Out
+31,Shay Cormac,CC,0,Combat Damage
+31,Elesh Norn,KE,0,
+31,Chun Li,LT,1,Combat Damage
+31,Pantlaza,ZH,0,Forfeit
+32,Vorinclex,CC,0,Combat Damage
+32,Kotori,KE,1,
+32,Giada,LT,0,Drain
+32,Pantlaza,ZH,0,Drain
+33,Nelly,CC,0,Combat Damage
+33,Temmet,KE,0,Forfeit
+33,Voja,LT,0,
+33,Leonardo,NC,0,Forfeit
+33,Kolodin,ZH,0,Forfeit
+34,Ghazghkull,CC,1,Combat Damage
+34,Beluna,KE,0,Combat Damage
+34,Chishiro,LT,0,Combat Damage
+34,Shadrix,NC,0,
+34,Kolodin,ZH,0,Combat Damage
+35,Faldorn,CC,0,Drain
+35,Alesha,KE,0,Drain
+35,Ygra,LT,0,Drain
+35,Shirei,NC,0,
+35,Kaza,ZH,0,Drain
+36,Nazgul,CC,0,Infinite Combo
+36,Xolatoyac,KE,0,Infinite Combo
+36,Chatterfang,LT,0,
+36,Shadrix,NC,0,Infinite Combo
+36,Ghyrson Starn,ZH,1,Infinite Combo
+37,Rivaz,CC,0,
+37,Alela,KE,0,
+37,Runo,LT,0,
+37,Raggadragga,NC,0,
+37,Elas il-Kor,ZH,0,
+38,,CC,1,
+38,,KE,0,Combat Damage
+38,,LT,1,
+38,,NC,1,Burn
+38,,ZH,1,Combat Damage
+39,Saruman,CC,0,
+39,Cadira,KE,1,
+39,Shadrix,NC,0,
+39,Betor,ZH,0,
+40,Nelly,CC,0,Combat Damage
+40,Xira,KE,0,Combat Damage
+40,Xavier,NC,0,
+40,Betor,ZH,0,Combat Damage
+41,Shay Cormac,CC,0,Burn
+41,Eivor,KE,0,Commander Damage
+41,Shalai and Hallar,NC,0,Burn
+41,Miirym,ZH,0,
+42,Zurgo Stormrender,CC,0,Combat Damage
+42,Teval,KE,0,Combat Damage
+42,Shiko and Narset,LT,0,Combat Damage
+42,Kykar,NC,1,
+42,Betor,ZH,0,Drain
+43,Ovika,CC,0,
+43,Alania,KE,0,
+43,Mr. House,LT,0,
+43,Shadrix,NC,0,
+43,Go-Shintai,ZH,0,
+44,,CC,1,
+44,,KE,0,
+44,,LT,1,
+44,,ZH,1,
+45,Rivaz,CC,0,
+45,Temmet,KE,1,
+45,Unesh,LT,0,
+45,Shalai and Hallar,NC,0,
+45,Dihada,ZH,0,
+46,Zurgo Stormrender,CC,0,Burn
+46,Jared,KE,0,Combat Damage
+46,Shelob,LT,0,Burn
+46,Miirym,ZH,0,
+47,Zurgo Stormrender,CC,0,Combat Damage
+47,Merry & Pippin,KE,0,Burn
+47,Rosheen,LT,0,
+47,Leonardo,NC,0,Combat Damage
+48,Saruman,CC,0,Burn
+48,Tyranids,KE,0,
+48,Zabaz,LT,0,Burn
+48,Shalai and Hallar,NC,1,Combat Damage
+49,Zurgo Stormrender,CC,0,
+49,Teval,KE,0,Combat Damage
+49,Rosheen,LT,0,Combat Damage
+49,Henzie,NC,1,Combat Damage
+50,Rivaz,CC,0,Combat Damage
+50,Goro-Goro,KE,0,Combat Damage
+50,Alexios,LT,0,Combat Damage
+50,Wilhelt,NC,0,
+51,Vorinclex,CC,0,Drain
+51,Obeka,KE,0,Drain
+51,Chun Li,LT,0,Drain
+51,Shirei,NC,0,
+52,Ghazghkull,CC,0,Combat Damage
+52,Xanathar,KE,0,Drain
+52,Kambal,LT,0,
+52,Kykar,NC,1,Drain
+53,Zurgo Stormrender,CC,0,Combat Damage
+53,Zoraline,KE,0,
+53,Chishiro,LT,0,Combat Damage
+53,Xavier,NC,0,Combat Damage
+54,Saruman,CC,0,Combat Damage
+54,Alesha,KE,0,Combat Damage
+54,Rosheen,LT,0,Combat Damage
+54,Shadrix,NC,0,
+55,Nazgul,CC,0,Combat Damage
+55,Dogmeat,KE,1,Combat Damage
+55,Ygra,LT,0,Combat Damage
+55,Xavier,NC,0,
+55,Kolodin,ZH,0,Combat Damage
+56,Aesi,CC,0,Combat Damage
+56,Xira,KE,0,
+56,Voja,LT,0,Burn
+56,Kykar,NC,0,Burn
+56,Kaza,ZH,0,Drain
+57,Faldorn,CC,0,Combat Damage
+57,Isu,KE,0,Combat Damage
+57,Rosheen,LT,0,Combat Damage
+57,Wilhelt,NC,0,Combat Damage
+57,Jetmir,ZH,0,
+58,Atraxa,CC,0,Combat Damage
+58,Xolatoyac,KE,0,Combat Damage
+58,Heliod,LT,0,Combat Damage
+58,Leonardo,NC,0,
+58,Anzrag,ZH,0,Deck Out
+59,Zurgo Stormrender,CC,0,Combat Damage
+59,Kotori,KE,0,
+59,Sheoldred,LT,0,Combat Damage
+59,Wilhelt,NC,0,Burn
+59,Kasla,ZH,0,Combat Damage
+60,Ovika,CC,0,Combat Damage
+60,Kamaz,KE,0,
+60,Locust God,LT,0,Combat Damage
+60,Kykar,NC,0,Combat Damage
+60,Ezrim,ZH,0,Combat Damage
+61,Zurgo Stormrender,CC,0,Combat Damage
+61,Teval,KE,0,Combat Damage
+61,Shiko and Narset,LT,1,Combat Damage
+61,Ureni,NC,0,
+61,Felothar,ZH,0,Combat Damage
+62,Rivaz,CC,1,Combat Damage
+62,Allies,KE,0,Commander Damage
+62,Runo,LT,0,Burn
+62,Kykar,NC,0,
+62,Ognis,ZH,0,Burn
+63,Archelos,LT,0,Combat Damage
+63,Kasla,ZH,0,Combat Damage
+63,Nelly,CC,0,
+64,Olivia,ZH,0,Commander Damage
+64,Cheshiro,LT,0,Combat Damage
+64,Nazgul,CC,0,Combat Damage
+65,Chiss Goria,ZH,0,Burn
+65,Ghazghkull,CC,0,Combat Damage
+65,Rosheen,LT,0,

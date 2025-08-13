@@ -1,0 +1,2 @@
+deck file,game file,join file,loss file,player file
+data/deck table.csv,data/game table.csv,data/join table.csv,data/loss table.csv,data/player table.csv

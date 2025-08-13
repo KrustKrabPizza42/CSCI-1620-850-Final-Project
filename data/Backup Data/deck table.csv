@@ -1,0 +1,102 @@
+Deck ID (PK),Player ID (FK),Commander
+1,CC,Vorinclex
+2,CC,Shay Cormac
+3,CC,Atraxa
+4,CC,Saruman
+5,CC,Nelly
+6,CC,Rivaz
+7,CC,Nazgul
+8,CC,Ovika
+9,CC,Faldorn
+10,CC,Krenko
+11,CC,Aesi
+12,CC,Ghazghkull
+13,CC,Rutstein
+14,CC,Zurgo Stormrender
+15,KE,Purphoros
+16,KE,Alania
+17,KE,Volo
+18,KE,Bright-Palm
+19,KE,Xolatoyac
+20,KE,Merry & Pippin
+21,KE,Zoraline
+22,KE,Obeka
+23,KE,Eivor
+24,KE,Alesha
+25,KE,Jared
+26,KE,Greyfax
+27,KE,Tyranids
+28,KE,Beluna
+29,KE,Goro-Goro
+30,KE,Temmet
+31,KE,Dogmeat
+32,KE,Xanathar
+33,KE,Elesh Norn
+34,KE,Kotori
+35,KE,Alela
+36,KE,Cadira
+37,KE,Xira
+38,KE,Teval
+39,KE,Isu
+40,LT,Perry
+41,LT,Ygra
+42,LT,Mr. House
+43,LT,Chatterfang
+44,LT,Unesh
+45,LT,Heliod
+46,LT,Voja
+47,LT,Runo
+48,LT,Sheoldred
+49,LT,Zholodok
+50,LT,Archelos
+51,LT,Chun Li
+52,LT,N'ghathrod
+53,LT,Kambal
+54,LT,Locust God
+55,LT,Chishiro
+56,LT,Zabaz
+57,LT,Arcades
+58,LT,Hinata
+59,LT,Alexios
+60,LT,Lynde
+61,LT,Giada
+62,LT,Shiko and Narset
+63,LT,Shelob
+64,LT,Rosheen
+65,NC,Grist
+66,NC,Henzie
+67,NC,Judith
+68,NC,Leonardo
+69,NC,Shadrix
+70,NC,Shirei
+71,NC,Tazri
+72,NC,Xavier
+73,NC,Raggadragga
+74,NC,Wilhelt
+75,NC,Kykar
+76,NC,Shalai and Hallar
+77,ZH,Avacyn
+78,ZH,Elas Il-Kor
+79,ZH,Brimaz
+80,ZH,Pantlaza
+81,ZH,Mycotyrant
+82,ZH,Ezrim
+83,ZH,Urtet
+84,ZH,Miirym
+85,ZH,Galadriel
+86,ZH,Ezrim
+87,ZH,Olivia
+88,ZH,Aminatou
+89,ZH,Raphael
+90,ZH,Umbris
+91,ZH,Dihada
+92,ZH,Satya
+93,ZH,Captain Howler
+94,ZH,Kosei
+95,ZH,Kolodin
+96,ZH,Kaza
+97,ZH,Ghyrson Starn
+98,ZH,Betor
+99,ZH,Go-Shintai
+100,ZH,Jetmir
+101,ZH,Anzrag
