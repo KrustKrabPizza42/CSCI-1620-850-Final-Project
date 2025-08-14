@@ -46,8 +46,10 @@ class AddPlayerFrame(Frame):
         self.frame3.pack(pady=5, padx=5)
 
         self.frame4: Frame = Frame(self)
+        self.turn_1_sol_ring_label = Label(self.frame4, text='Turn 1 sol ring: ')
         self.turn_1_sol_ring_yes: Radiobutton = Radiobutton(self.frame4, text='Yes', variable=self.turn_1_sol_ring, value=1)
         self.turn_1_sol_ring_no: Radiobutton = Radiobutton(self.frame4, text='No', variable=self.turn_1_sol_ring, value=0)
+        self.turn_1_sol_ring_label.pack(side='left')
         self.turn_1_sol_ring_yes.pack(side='left')
         self.turn_1_sol_ring_no.pack(side='right')
         self.frame4.pack(pady=5, padx=5)
