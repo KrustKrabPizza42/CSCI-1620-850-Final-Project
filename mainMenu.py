@@ -46,12 +46,19 @@ class MainMenu(Tk):
 
     #Used for the menu ribbon's button to return to Main Menu
     def return_to_main(self):
+        """
+        Returns to main menu frame
+        """
 
         self.frame.pack_forget()
         self.frame: MainMenuFrame = MainMenuFrame(self)
         self.frame.pack()
 
     def change_frame(self, frame):
+        """
+        Changes to the new selected frame
+        :param frame: The new frame to go to
+        """
 
         self.frame.pack_forget()
         self.frame: Frame = frame(self)
@@ -59,6 +66,10 @@ class MainMenu(Tk):
 
     #Saves the game info to a CSV file
     def save_game(self, game_model):
+        """
+        Saves the date from a GameModel to the appropriate CSV files
+        :param game_model: A GameModel
+        """
 
         with open(data.DataLists.data_lists.filepaths['game file'], 'a', newline='') as csv_game_file:
             with open (data.DataLists.data_lists.filepaths['join file'], 'a', newline='') as csv_join_file:
@@ -83,6 +94,11 @@ class MainMenu(Tk):
         data.DataLists.data_lists.populate_game_lists()
 
     def save_new_player(self, player_model):
+        """
+        Saves the date from a PlayerModel to the appropriate CSV files
+        :param player_model:  A Player Model to be saved
+        """
+
 
         with open(data.DataLists.data_lists.filepaths['player file'], 'a', newline='') as csv_player_table:
 
@@ -94,6 +110,10 @@ class MainMenu(Tk):
         data.DataLists.data_lists.populate_player_lists()
 
     def save_new_deck(self, deck_model):
+        """
+        Saves the date from a DeckModel to the appropriate CSV files
+        :param deck_model: A DeckModel to be saved
+        """
 
         with open(data.DataLists.data_lists.filepaths['deck file'], 'a', newline='') as csv_deck_table:
 

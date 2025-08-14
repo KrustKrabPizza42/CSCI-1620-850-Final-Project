@@ -56,12 +56,23 @@ class NewPlayerFrame(Frame):
         self.frame5.pack()
 
     def get_form_data(self) -> None:
+        """
+        Gets the info from the form and saves it as a PlayerModel if it is valid, then sends it to be saved to CSV
+        """
 
         new_player = PlayerModel(self.player_id_entry.get(), self.first_name_box.get(), self.last_name_box.get())
+        
+        if new_player.player_id == '' or new_player.first_name == '' or new_player.last_name == '':
 
-        self.root.save_new_player(new_player)
-        self.return_to_main()
+            self.new_player_label.config(text='Error: Please fill out all sections', bg='Red')
+
+        else:
+            self.root.save_new_player(new_player)
+            self.return_to_main()
 
     #method to return to main menu
     def return_to_main(self) -> None:
+        """
+        Returns to main menu frame
+        """
         self.root.change_frame(Views.mainMenuFrame.MainMenuFrame)

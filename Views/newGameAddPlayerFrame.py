@@ -61,27 +61,29 @@ class AddPlayerFrame(Frame):
 
     #Method to get the player info packaged into a player object and return it
     def get_player(self) -> GamePlayerInfo:
+        """
+        Gets the appropriate info from this sub frame and returns a GamePlayerInfo model
+        :return: GamePlayerInfo
+        """
 
         self.player: GamePlayerInfo = GamePlayerInfo(self.player_id_box.get(), 0,
                                                         self.turn_1_sol_ring.get(), self.loss_reason_box.get())
 
-        for dict in data.DataLists.data_lists.deck_lists_dicts:
+        if self.player.player_id == '' or self.player.deck_id == '' or self.player.loss_reason == '':
 
-            if self.deck_id_box.get() == dict['Commander']:
+            self.player_label.config(text='Error: Please fill in all sections', bg='Red')
 
-                self.player.deck_id = dict['Commander']
-                
-        for dict in data.DataLists.data_lists.possible_players_dicts:
+        else:
+            for dict in data.DataLists.data_lists.deck_lists_dicts:
 
-            if self.player.player_id == (dict['Last Name'] + ', ' + dict['First Name']):
+                if self.deck_id_box.get() == dict['Commander']:
 
-                self.player.player_id = dict['Player ID (PK)']
+                    self.player.deck_id = dict['Commander']
 
-        return self.player
-    
-    #Method to fill the the lists for the deck drop down options
-    def populate_deck_lists(self) -> None:
+            for dict in data.DataLists.data_lists.possible_players_dicts:
 
-            for deck in data.DataLists.data_lists.deck_lists_dicts:
-                self.deck_lists_dicts.append(deck)
-                self.deck_lists.append(deck['Commander'])
+                if self.player.player_id == (dict['Last Name'] + ', ' + dict['First Name']):
+
+                    self.player.player_id = dict['Player ID (PK)']
+
+            return self.player

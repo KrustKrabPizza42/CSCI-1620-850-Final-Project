@@ -25,6 +25,7 @@ class NewGameFrame(Frame):
 
         self.player_frame_list = []
         self.game_id: str = ''
+        self.num_of_players: int = 0
 
         self.root: MainMenu = root
 
@@ -82,7 +83,12 @@ class NewGameFrame(Frame):
 
     #Method to add a frame for a new player
     def add_player(self, frame) -> None:
+        """
+        Used to add a player frame to the root frame
+        :param frame: The root frame
+        """
 
+        self.num_of_players += 1
         self.player_frame_list.append(Views.newGameAddPlayerFrame.AddPlayerFrame(frame))
 
         for frame in self.player_frame_list:
@@ -90,6 +96,10 @@ class NewGameFrame(Frame):
 
     #method to retrieve info from the form; and save the data
     def get_form_data(self) -> None:
+        """
+        Gets the data from the form, saves it as a GameModel and sends it to be saved to CSV
+        Gives an error if a section is not filled
+        """
 
         new_game: GameModel = GameModel()
 
@@ -109,26 +119,42 @@ class NewGameFrame(Frame):
 
         self.get_game_id()
 
-        self.root.save_game(new_game)
-        data.DataLists.data_lists.populate_game_lists()
-        self.return_to_main()
+        if new_game.date == '' or len(new_game.players_data) < self.num_of_players or new_game.first_out == '' or new_game.first_player == '':
+
+            self.new_game_label.config(text='Error: Please fill out all fields', bg='Red')
+
+        else:
+                self.root.save_game(new_game)
+                data.DataLists.data_lists.populate_game_lists()
+                self.return_to_main()
 
     #method to return to main menu
     def return_to_main(self) -> None:
+        """
+        Returns to the main menu frame
+        """
         self.root.change_frame(Views.mainMenuFrame.MainMenuFrame)
 
     #Method to retrieve the info from the pl
     def get_players(self)  -> list:
+        """
+        Gets the information from each player frame and adds it to a list to be added to the GameModel
+        :return: List of individual player info
+        """
 
         players: list = []
 
         for frame in self.player_frame_list:
 
-            players.append(frame.get_player())
+            if frame.get_player() is not None:
+                players.append(frame.get_player())
 
         return players
 
     #Method to get the last game ID and to make the next one (last ID + 1)
     def get_game_id(self) -> None:
+        """
+        Sets the game ID to be the next one in the sequence in proper format
+        """
 
         self.game_id: str = f'G-{len(data.DataLists.data_lists.game_table_dicts) +1}'

@@ -56,6 +56,10 @@ class NewDeckFrame(Frame):
         self.frame5.pack()
 
     def get_form_data(self) -> None:
+        """
+        When called gets the information from the form and saves it to a Deck Model that is passed back to the root
+        window to be saved to a CSV file
+        """
 
         new_deck: DeckModel = DeckModel(self.deck_id, self.player_id_entry.get(), self.commander_box.get())
 
@@ -63,16 +67,25 @@ class NewDeckFrame(Frame):
             if new_deck.owner == player['Last Name'] + ', ' + player['First Name']:
                 new_deck.owner = player['Player ID (PK)']
 
+        if new_deck.owner =='' or new_deck.commander == '':
+            self.new_deck_label.config(text='Error: Please fill out all sections', bg='Red')
 
-        self.root.save_new_deck(new_deck)
-        self.return_to_main()
+        else:
+            self.root.save_new_deck(new_deck)
+            self.return_to_main()
 
 
 
     def get_deck_id(self) -> None:
+        """
+        Sets the class' deck id to the next appropriate ID with proper format
+        """
 
         self.deck_id = f'D-{len(data.DataLists.data_lists.deck_lists) + 1}'
 
     #method to return to main menu
     def return_to_main(self) -> None:
+        """
+        Returns to the main menu frame
+        """
         self.root.change_frame(Views.mainMenuFrame.MainMenuFrame)

@@ -39,8 +39,3 @@ class MainMenuFrame(Frame):
 
         self.game_list_box.pack()
         self.frame1.pack()
-
-
-    def new_game_frame(self) -> None:
-
-        self.root.change_frame(NewGameFrame)

@@ -1,3 +1,7 @@
 Game Id,Deck Id (Fk),Player Id (Fk),Turn 1 Sol Ring,Loss Reason
 G-1,Deck 1,TT,1,Winner
 G-1,Deck 2,NC,0,Alt win Con
+G-2,Deck 2,NC,0,Drain
+G-2,Deck 1,TT,0,Commander Damage
+G-3,Deck 2,NC,0,Deck Out
+G-3,Deck 2,TT,1,Infinite Combo
